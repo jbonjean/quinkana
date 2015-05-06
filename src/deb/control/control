@@ -1,0 +1,9 @@
+Package: quinkana
+Version: 0.1
+Section: misc
+Priority: optional
+Architecture: all
+Depends: default-jre (>= 1.7)
+Maintainer: Julien Bonjean <julien@bonjean.info>
+Description: Tail logstash TCP output
+Distribution: development
