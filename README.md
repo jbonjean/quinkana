@@ -1,12 +1,16 @@
 # Quinkana
 
-Tail **logstash** TCP output.
+Tail [logstash](http://logstash.net) TCP output.
 
 ## Installation
 
 RPM, DEB, JAR and self-contained executable are provided.
+You only need Java 7 (JRE) or later.
 
 ## Usage
+
+Basically you use `quinkana list` to report the fields from logstash messages,
+then you can use `quinkana tail` with the fields you selected.
 
 ```
 usage: quinkana tail|list [OPTIONS]
@@ -57,7 +61,7 @@ tcp {
 }
 ```
 
-For example, a typical configuration looks like:
+For example, a typical ELK configuration looks like:
 ```
 input {
 	udp {
@@ -81,5 +85,6 @@ output {
 
 ## Copying
 
-quinkana is Copyright (C) 2015 Julien Bonjean <julien@bonjean.info><br />
+Quinkana is Copyright (C) 2015 Julien Bonjean.<br/>
 See the file COPYING for information of licensing and distribution.
+
